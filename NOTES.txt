@@ -44,3 +44,4 @@ lista la insersion en BD
 UI del gurdado 
 UI para desplegar la lista de registros guardados
 Cargar el registro guardado al darle doble click
+elbow0 esta guardando null

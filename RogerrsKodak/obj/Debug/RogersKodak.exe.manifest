@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BIWbDPb+CQ9kDsJqDN5enOm7zMYE/iAAE46KU/NIpig=</dsig:DigestValue>
+        <dsig:DigestValue>rG4h90A5peVst6XtMwGr6pnka+4P+1LhNaIBplFDr80=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WuRMnDDgR3m8Wx1y/w6VVLi6esqU4hSjbTn+9+Uo4yk=</dsig:DigestValue>
+      <dsig:DigestValue>cFqhErjnAYBjROASog5yxa1n4WZl+C5gxNY7p8ruoVw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LocalBD_log.ldf" size="802816" writeableType="applicationData">
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VVi+sGluCmKA8ACxy9eMAS5dQb5LGTLhWKS/qYVJPz4=</dsig:DigestValue>
+      <dsig:DigestValue>MFOOf1yZQOk2rJPQvYCMd8Ac5vr6jCXeK7u0MkaB37Q=</dsig:DigestValue>
     </hash>
   </file>
   <file name="RogersKodak.exe.config" size="564">
