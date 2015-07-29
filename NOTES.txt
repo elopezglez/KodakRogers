@@ -1,0 +1,46 @@
+****miercoles 24 junio 2015
+
+
+**viernes 26 junio 2015
+TODO
+-terminar la pantalla pincipal
+-colores para los resultados Verde,Amarillo,Rojo,Negro
+
+**lunes 13 de julio 
+-acomodar bien el label result0
+-colorear el single result
+-colorear el end result
+
+
+martes 14 de julio 2015
+
+-Aceptable
+BackColor green
+forecolor black
+
+-Riesgo
+Back color DarkOrange
+Forecolor Black
+
+-Alto Riesgo
+Backcolor  red
+forecolor black
+
+-Alto Riesgo
+Backcolor  black
+forecolor White
+
+
+viernes 17 de julio 
+*que el calculador se cargue con los valores que estan seleccionados en el dashboard
+
+*26 julio 2015
+Error	1	The target database schema could not be retrieved. Unable to reconnect to database: A severe error occurred on the current command.  The results, if any, should be discarded.
+A severe error occurred on the current command.  The results, if any, should be discarded.	C:\USERS\REILE\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\ROGERRSKODAK\ROGERRSKODAK\LOCALBD.MDF	0	0	
+
+
+*29 de julio
+lista la insersion en BD
+UI del gurdado 
+UI para desplegar la lista de registros guardados
+Cargar el registro guardado al darle doble click

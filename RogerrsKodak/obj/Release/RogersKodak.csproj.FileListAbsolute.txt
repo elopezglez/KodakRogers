@@ -1,0 +1,17 @@
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\LocalBD.mdf
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\LocalBD_log.ldf
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\RogersKodak.exe.config
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\RogersKodak.exe.manifest
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\RogersKodak.application
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\RogersKodak.exe
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\bin\Release\RogersKodak.pdb
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.Dialogs.DlgPart2.resources
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.Dialogs.DlgPart1.resources
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.FrmDashBoard.resources
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.FrmSave.resources
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.Properties.Resources.resources
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.csproj.GenerateResource.Cache
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.exe.manifest
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.application
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.exe
+C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.pdb
