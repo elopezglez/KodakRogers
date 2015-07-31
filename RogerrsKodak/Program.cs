@@ -16,8 +16,8 @@ namespace RogersKodak
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmDashBoard());
-            //Application.Run(new FrmSave(string.Empty));
+            //Application.Run(new FrmDashBoard());
+            Application.Run(new FrmSave(string.Empty));
         }
     }
 }
