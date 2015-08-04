@@ -40,8 +40,13 @@ A severe error occurred on the current command.  The results, if any, should be 
 
 
 *29 de julio
-lista la insersion en BD
-UI del gurdado 
-UI para desplegar la lista de registros guardados
+
+UI detallado del gurdado 
 Cargar el registro guardado al darle doble click
-elbow0 esta guardando null
+UIi detallado para la lista de anaysis registrados
+
+*3 de agosto
+Insersion en BD done
+UI para desplegar la lista de registros guardados done
+elbow0 esta guardando null on done
+

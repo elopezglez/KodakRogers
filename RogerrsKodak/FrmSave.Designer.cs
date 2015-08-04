@@ -152,11 +152,11 @@
             // 
             // txtDate
             // 
+            this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtDate.Location = new System.Drawing.Point(203, 179);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(200, 26);
+            this.txtDate.Size = new System.Drawing.Size(320, 26);
             this.txtDate.TabIndex = 3;
             // 
             // BtnCancel

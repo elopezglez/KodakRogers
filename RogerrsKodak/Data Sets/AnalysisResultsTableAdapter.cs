@@ -39,6 +39,9 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
                                          Shoulder1,
                                          Shoulder2,
                                          Shoulder0,
+                                         Elbow1,
+                                         Elbow2,
+                                         Elbow0,
                                          Hand1,
                                          Hand2,
                                          Hand0,
@@ -57,6 +60,9 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
                                          @shoulder1,
                                          @shoulder2,
                                          @shoulder0,
+                                         @Elbow1,
+                                         @Elbow2,
+                                         @Elbow0,                                         
                                          @hand1,
                                          @hand2,
                                          @hand0,
@@ -83,6 +89,10 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
             cmd.Parameters.Add("@shoulder2", SqlDbType.VarChar);
             cmd.Parameters["@shoulder2"].Value = shoulder2;
             cmd.Parameters.Add("@shoulder0", SqlDbType.VarChar).Value=shoulder0;
+
+            cmd.Parameters.Add("@elbow1", SqlDbType.VarChar).Value = elbow1;
+            cmd.Parameters.Add("@elbow2", SqlDbType.VarChar).Value = elbow2;
+            cmd.Parameters.Add("@elbow0", SqlDbType.VarChar).Value = elbow0;
 
             cmd.Parameters.Add("@hand1", SqlDbType.VarChar).Value = hand1;
             cmd.Parameters.Add("@hand2", SqlDbType.VarChar).Value = hand2;

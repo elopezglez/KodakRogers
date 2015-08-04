@@ -94,6 +94,12 @@
     <Compile Include="Dialogs\DlgPart1.Designer.cs">
       <DependentUpon>DlgPart1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAnalysisList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysisList.Designer.cs">
+      <DependentUpon>FrmAnalysisList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\DlgPart1.resx">
       <DependentUpon>DlgPart1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalysisList.resx">
+      <DependentUpon>FrmAnalysisList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDashBoard.resx">
       <DependentUpon>FrmDashBoard.cs</DependentUpon>
