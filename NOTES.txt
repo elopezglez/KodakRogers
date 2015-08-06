@@ -50,3 +50,5 @@ Insersion en BD done
 UI para desplegar la lista de registros guardados done
 elbow0 esta guardando null on done
 
+*05 agosto
+consulta de snalysis done

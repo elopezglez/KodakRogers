@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RogersKodak.Data_Sets.LocalBDDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace RogersKodak
         {
             InitializeComponent();
             this.PrepareGrid();
+            var cn = new UtilsTableAdapter();
+            var tb = cn.GetAnalysisDinceDate(DateTime.Now);
         }
 
         private void PrepareGrid()
@@ -26,7 +29,7 @@ namespace RogersKodak
             lstAnalysis.HotTracking = false;
             lstAnalysis.LabelEdit = false;
             lstAnalysis.MultiSelect = false;
-            lstAnalysis.ShowItemToolTips=true;
+            lstAnalysis.ShowItemToolTips = true;
             lstAnalysis.View = View.Details;
 
             lstAnalysis.Columns.Add("ID", 50, HorizontalAlignment.Center);
@@ -36,11 +39,11 @@ namespace RogersKodak
             lstAnalysis.Columns.Add("Resultado", 150, HorizontalAlignment.Center);
 
             lstAnalysis.Items.Add("1", "primer col", 0).BackColor = Color.LightGray;
-            lstAnalysis.Items[0].SubItems.Add( "Segunda");
+            lstAnalysis.Items[0].SubItems.Add("Segunda");
             lstAnalysis.Items[0].SubItems.Add("Tercer");
             lstAnalysis.Items[0].SubItems.Add("cuarta");
 
-            lstAnalysis.Items.Add("1", "primer col", 0) ;
+            lstAnalysis.Items.Add("1", "primer col", 0);
             lstAnalysis.Items[1].SubItems.Add("Segunda");
             lstAnalysis.Items[1].SubItems.Add("Tercer");
             lstAnalysis.Items[1].SubItems.Add("cuarta");

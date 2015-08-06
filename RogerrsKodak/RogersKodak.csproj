@@ -82,6 +82,7 @@
     <Compile Include="Data Sets\AnalysisResultsTableAdapter.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Data Sets\UtilsTableAdapter.cs" />
     <Compile Include="Dialogs\DlgPart2.cs">
       <SubType>Form</SubType>
     </Compile>
