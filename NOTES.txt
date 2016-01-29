@@ -52,3 +52,10 @@ elbow0 esta guardando null on done
 
 *05 agosto
 consulta de snalysis done
+
+
+*21 de enero. Pendiente averiguar como ignorar ciertos archivos / carpetas del repositorio en github
+*24 quedo el despliege de resultados de la tabla analysis data
+
+*25 de enero centralizar la forma en que se obtiene el cnn string que lo obteg=ngan del app.config es el objetivo
+*funcionalidad de abrir elemento

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RogersKodak.exe" size="159232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RogersKodak.exe" size="160768">
       <assemblyIdentity name="RogersKodak" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FaPK9plAhdU9a0PqUebOS+O+pUIEbB8XwjIsI0AWsF4=</dsig:DigestValue>
+        <dsig:DigestValue>2IfDcAoi4c4sFAgg1LTWOeMFX9UtKYCFybndpPcIhSM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>51ovm2L5X4huivBly4T+1VnqxeLHpj+qTKrQ4/mutWc=</dsig:DigestValue>
+      <dsig:DigestValue>wZVBykCxHLDsT4HKsN5oeSC0o4EYxH0JavTEaWtopiA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LocalBD_log.ldf" size="802816" writeableType="applicationData">
@@ -68,16 +68,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>a7RRmVqhgEuHMz8IpHWWPd30MdCD6MeAOZewpNyJ3js=</dsig:DigestValue>
+      <dsig:DigestValue>v5Si8oU0HcfcLESEKaeAexieMLceEblO8NEPMYy0/50=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RogersKodak.exe.config" size="564">
+  <file name="RogersKodak.exe.config" size="1056">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7o+BjPqYKEm8uzxpaVghPjkR3qQjnoU2OjCM614Ic90=</dsig:DigestValue>
+      <dsig:DigestValue>N883HG6QLKouOSJ2ifrTQ7/qlk8AKCfY32zILVCSWxE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

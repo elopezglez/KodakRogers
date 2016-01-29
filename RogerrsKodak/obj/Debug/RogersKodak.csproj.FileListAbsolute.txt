@@ -17,8 +17,15 @@ C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\b
 C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Debug\RogersKodak.application
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\LocalBD.mdf
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\LocalBD_log.ldf
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.exe.config
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.exe.manifest
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.application
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.exe
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.pdb
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.csprojResolveAssemblyReference.cache
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.Dialogs.DlgPart2.resources
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.Dialogs.DlgPart1.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.FrmAnalysisList.resources
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.FrmDashBoard.resources
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.FrmSave.resources
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.Properties.Resources.resources
@@ -27,10 +34,3 @@ D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.exe.manifest
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.application
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.exe
 D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.pdb
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.exe.config
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.exe.manifest
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.application
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.exe
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Debug\RogersKodak.pdb
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.csprojResolveAssemblyReference.cache
-D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Debug\RogersKodak.FrmAnalysisList.resources

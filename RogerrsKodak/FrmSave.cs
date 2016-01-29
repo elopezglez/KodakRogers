@@ -20,7 +20,7 @@ namespace RogersKodak
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            string[] arr = _strResults.Split('-');
+            string[] arr =  _strResults.Split('-');
             var adapterRs = new AnalysisResultsTableAdapter();
             int analysisResultsId = adapterRs.InsertNewAnalysisResultsRecord(
                                     arr[0],

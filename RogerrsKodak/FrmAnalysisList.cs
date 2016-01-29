@@ -13,12 +13,28 @@ namespace RogersKodak
 {
     public partial class FrmAnalysisList : Form
     {
+        UtilsTableAdapter cn = new UtilsTableAdapter();
         public FrmAnalysisList()
         {
             InitializeComponent();
-            this.PrepareGrid();
-            var cn = new UtilsTableAdapter();
-            var tb = cn.GetAnalysisDinceDate(DateTime.Now);
+            txtEndTime.Value= DateTime.Now.Date.AddDays(1);
+            var tb = cn.GetAnalysisDinceDate(txtStartDate.Value.Date, txtEndTime.Value.Date);
+            PrepareGrid();
+            ShowResults();
+        }
+
+
+
+
+        private void FillGrid(DataTable ds) {
+            lstAnalysis.Items.Clear();
+            foreach (DataRow row in ds.Rows)
+            {
+                var item = lstAnalysis.Items.Add(row["ID"].ToString(), row["ID"].ToString(), 0);//.BackColor = Color.LightGray;
+                item.SubItems.Add(row["DateCreated"].ToString());
+                item.SubItems.Add(row["JobTitle"].ToString());
+                item.SubItems.Add("EmployeeName");
+            }
         }
 
         private void PrepareGrid()
@@ -36,23 +52,16 @@ namespace RogersKodak
             lstAnalysis.Columns.Add("Fecha", 150, HorizontalAlignment.Center);
             lstAnalysis.Columns.Add("Proceso", 150, HorizontalAlignment.Center);
             lstAnalysis.Columns.Add("Empleado", 150, HorizontalAlignment.Center);
-            lstAnalysis.Columns.Add("Resultado", 150, HorizontalAlignment.Center);
+        }
 
-            lstAnalysis.Items.Add("1", "primer col", 0).BackColor = Color.LightGray;
-            lstAnalysis.Items[0].SubItems.Add("Segunda");
-            lstAnalysis.Items[0].SubItems.Add("Tercer");
-            lstAnalysis.Items[0].SubItems.Add("cuarta");
+        private void btnGetAnalysis_Click(object sender, EventArgs e)
+        {
+            ShowResults();
+        }
 
-            lstAnalysis.Items.Add("1", "primer col", 0);
-            lstAnalysis.Items[1].SubItems.Add("Segunda");
-            lstAnalysis.Items[1].SubItems.Add("Tercer");
-            lstAnalysis.Items[1].SubItems.Add("cuarta");
-
-            lstAnalysis.Items.Add("1", "primer col", 0).BackColor = Color.LightGray;
-            lstAnalysis.Items[2].SubItems.Add("Segunda");
-            lstAnalysis.Items[2].SubItems.Add("Tercer");
-            lstAnalysis.Items[2].SubItems.Add("cuarta");
-
+        private void ShowResults() {
+            var tb = cn.GetAnalysisDinceDate(txtStartDate.Value.Date, txtEndTime.Value.Date);
+            FillGrid(tb);        
         }
 
     }

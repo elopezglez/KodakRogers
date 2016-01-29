@@ -16,9 +16,9 @@ namespace RogersKodak
         public FrmDashBoard()
         {
             InitializeComponent();
-            var dt = new DateTime(2015, 9, 1);
-            if (DateTime.Now > new DateTime(2015, 9, 1))
-                MessageBox.Show("VERSION DE PRUEBA EXPIRÓ EL DIA." + dt.Date.ToLongDateString(), "RK");
+            //var dt = new DateTime(2015, 9, 1);
+            //if (DateTime.Now > new DateTime(2015, 9, 1))
+            //    MessageBox.Show("VERSION DE PRUEBA EXPIRÓ EL DIA." + dt.Date.ToLongDateString(), "RK");
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)

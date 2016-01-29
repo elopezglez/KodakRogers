@@ -10,14 +10,16 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
 {
     public class UtilsTableAdapter
     {
-        public DataTable GetAnalysisDinceDate(DateTime date)
+        public DataTable GetAnalysisDinceDate(DateTime startDate, DateTime endTime)
         {
             DataTable tb = new DataTable();
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = @"select * from AnalysisData";
-//                                where datecreated > @startDate";
-            //cmd.CommandType = CommandType.Text;
-            //cmd.Parameters.Add("@startDate", SqlDbType.VarChar).Value = date.AddDays(-30);
+            cmd.CommandText = @"select * from AnalysisData
+                              where datecreated >= @startDate
+                              and datecreated < @endDate";
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@startDate", SqlDbType.Date).Value = startDate;
+            cmd.Parameters.Add("@endDate", SqlDbType.Date).Value = endTime;
             var cnn = new AnalysisResultsTableAdapter();
             cmd.Connection = cnn.Connection;
             cmd.Connection.Open();
