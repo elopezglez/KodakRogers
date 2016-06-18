@@ -44,7 +44,7 @@ namespace RogersKodak
             strForDB += "-" + RKUtils.GetBodyPartCombination(gbHand);
             strForDB += "-" + RKUtils.GetBodyPartCombination(gbLeg);
             strForDB += "-" + RKUtils.GetBodyPartCombination(gbFeet);
-            var dlg = new FrmSave(strForDB);
+            var dlg = new FrmSave(strForDB, this);
             dlg.ShowDialog();
 
         }

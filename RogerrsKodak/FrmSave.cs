@@ -13,10 +13,13 @@ namespace RogersKodak
     public partial class FrmSave : Form
     {
         string _strResults = string.Empty;
-        public FrmSave(string strResults)
+        Form _frmDashBoard;
+
+        public FrmSave(string strResults, Form frmDashBoard)
         {
             InitializeComponent();
             this._strResults = strResults;
+            _frmDashBoard = frmDashBoard;
         }
 
 
@@ -57,6 +60,7 @@ namespace RogersKodak
 
             MessageBox.Show("EL ANALISIS SE HA GUARDADO CON EXITO", string.Empty, MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
+            _frmDashBoard.Close();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

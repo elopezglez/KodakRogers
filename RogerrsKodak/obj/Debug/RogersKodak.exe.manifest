@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mv9plDCLyoUcNK8tnp0c3dB5YOSaVoDRhLmLHp2Ou/g=</dsig:DigestValue>
+        <dsig:DigestValue>UDG1cKqmm23c3pf/dd4ECa2GEtaBUTGBLIg+RNYvkfc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>iMiE60efajmoQAM+TA1icquGrMyywDioCZWU25Jnyes=</dsig:DigestValue>
+      <dsig:DigestValue>6hGWpkdz29BBw8zY/pqqEqPs28g7rZ7Nrbc8I3Nw6kI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="RogersKodak.exe.config" size="902">
