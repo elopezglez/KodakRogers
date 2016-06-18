@@ -34,8 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGetAnalysis = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstAnalysis
@@ -95,33 +95,35 @@
             this.btnGetAnalysis.UseVisualStyleBackColor = true;
             this.btnGetAnalysis.Click += new System.EventHandler(this.btnGetAnalysis_Click);
             // 
-            // button1
+            // btnOpen
             // 
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 366);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 32);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOpen.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpen.Location = new System.Drawing.Point(12, 366);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(87, 32);
+            this.btnOpen.TabIndex = 8;
+            this.btnOpen.Text = "Abrir";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(105, 366);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 32);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(105, 366);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(87, 32);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Nuevo";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmAnalysisList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 437);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnGetAnalysis);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -143,7 +145,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGetAnalysis;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

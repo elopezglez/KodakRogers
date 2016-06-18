@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using RogersKodak.Properties;
 
 namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
 {
@@ -31,6 +32,7 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
                                                   string feet0
                                                  )
         {
+
             int id = 0;
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = @"INSERT INTO  AnalysisResults (
@@ -76,19 +78,15 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
                                          @feet0
                                         );";
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@neck", SqlDbType.VarChar);
-            cmd.Parameters["@neck"].Value = neck;
-            cmd.Parameters.Add("@neck0", SqlDbType.VarChar).Value=neck0;
+            cmd.Parameters.Add("@neck", SqlDbType.VarChar).Value = neck;
+            cmd.Parameters.Add("@neck0", SqlDbType.VarChar).Value = neck0;
 
-            cmd.Parameters.Add("@back", SqlDbType.VarChar);
-            cmd.Parameters["@back"].Value = back;
+            cmd.Parameters.Add("@back", SqlDbType.VarChar).Value = back;
             cmd.Parameters.Add("@back0", SqlDbType.VarChar).Value = back0;
 
-            cmd.Parameters.Add("@shoulder1", SqlDbType.VarChar);
-            cmd.Parameters["@shoulder1"].Value = shoulder1;
-            cmd.Parameters.Add("@shoulder2", SqlDbType.VarChar);
-            cmd.Parameters["@shoulder2"].Value = shoulder2;
-            cmd.Parameters.Add("@shoulder0", SqlDbType.VarChar).Value=shoulder0;
+            cmd.Parameters.Add("@shoulder1", SqlDbType.VarChar).Value = shoulder1;
+            cmd.Parameters.Add("@shoulder2", SqlDbType.VarChar).Value = shoulder2;
+            cmd.Parameters.Add("@shoulder0", SqlDbType.VarChar).Value = shoulder0;
 
             cmd.Parameters.Add("@elbow1", SqlDbType.VarChar).Value = elbow1;
             cmd.Parameters.Add("@elbow2", SqlDbType.VarChar).Value = elbow2;
@@ -98,22 +96,20 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
             cmd.Parameters.Add("@hand2", SqlDbType.VarChar).Value = hand2;
             cmd.Parameters.Add("@hand0", SqlDbType.VarChar).Value = hand0;
 
-            cmd.Parameters.Add("@leg1", SqlDbType.VarChar);
-            cmd.Parameters["@leg1"].Value = leg1;
-            cmd.Parameters.Add("@leg2", SqlDbType.VarChar);
-            cmd.Parameters["@leg2"].Value = feet2;
+            cmd.Parameters.Add("@leg1", SqlDbType.VarChar).Value = leg1;
+            cmd.Parameters.Add("@leg2", SqlDbType.VarChar).Value = leg2;
             cmd.Parameters.Add("@leg0", SqlDbType.VarChar).Value = leg0;
 
             cmd.Parameters.Add("@feet1", SqlDbType.VarChar).Value = feet1;
             cmd.Parameters.Add("@feet2", SqlDbType.VarChar).Value = feet2;
             cmd.Parameters.Add("@feet0", SqlDbType.VarChar).Value = feet0;
 
-            cmd.Connection = this.Connection;
-            this.Connection.Open();
-            var reader = cmd.ExecuteReader(CommandBehavior.SingleResult);            
+            cmd.Connection = new SqlConnection(Settings.Default.LocalBDConnectionString);
+            cmd.Connection.Open();
+            var reader = cmd.ExecuteReader(CommandBehavior.SingleResult);
             while (reader.Read())
                 id = int.Parse(reader[0].ToString());
-            this.Connection.Close();
+            cmd.Connection.Close();
             return id;
         }
     }

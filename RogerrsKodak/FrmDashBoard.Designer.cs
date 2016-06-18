@@ -135,9 +135,7 @@
             this.feetlevel1 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.gbShoulder.SuspendLayout();
             this.gbNeck.SuspendLayout();
             this.gbBack.SuspendLayout();
@@ -145,7 +143,6 @@
             this.gbElbow.SuspendLayout();
             this.gbHand.SuspendLayout();
             this.gbFeet.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbShoulder
@@ -230,6 +227,7 @@
             // btnShoulders
             // 
             this.btnShoulders.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShoulders.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnShoulders.Location = new System.Drawing.Point(624, 17);
             this.btnShoulders.Name = "btnShoulders";
             this.btnShoulders.Size = new System.Drawing.Size(104, 31);
@@ -340,7 +338,6 @@
             // 
             // gbNeck
             // 
-            this.gbNeck.Controls.Add(this.button1);
             this.gbNeck.Controls.Add(this.neckresult0);
             this.gbNeck.Controls.Add(this.btnNeck);
             this.gbNeck.Controls.Add(this.label11);
@@ -374,6 +371,7 @@
             // btnNeck
             // 
             this.btnNeck.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNeck.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnNeck.Location = new System.Drawing.Point(624, 17);
             this.btnNeck.Name = "btnNeck";
             this.btnNeck.Size = new System.Drawing.Size(104, 31);
@@ -543,6 +541,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnBack.Location = new System.Drawing.Point(624, 17);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(104, 31);
@@ -671,6 +670,7 @@
             // btnLeg
             // 
             this.btnLeg.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeg.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnLeg.Location = new System.Drawing.Point(624, 17);
             this.btnLeg.Name = "btnLeg";
             this.btnLeg.Size = new System.Drawing.Size(104, 31);
@@ -1051,6 +1051,7 @@
             // btnHand
             // 
             this.btnHand.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHand.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnHand.Location = new System.Drawing.Point(624, 17);
             this.btnHand.Name = "btnHand";
             this.btnHand.Size = new System.Drawing.Size(104, 31);
@@ -1239,6 +1240,7 @@
             // btnFeet
             // 
             this.btnFeet.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeet.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnFeet.Location = new System.Drawing.Point(624, 17);
             this.btnFeet.Name = "btnFeet";
             this.btnFeet.Size = new System.Drawing.Size(104, 31);
@@ -1347,37 +1349,23 @@
             this.label76.TabIndex = 0;
             this.label76.Text = "Izquierdo:";
             // 
-            // menuStrip1
+            // btnSave
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(746, 24);
-            this.menuStrip1.TabIndex = 13;
-            this.menuStrip1.Text = "Archivo";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
-            this.toolStripMenuItem1.Text = "Guardar";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 19);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSave.Location = new System.Drawing.Point(636, 661);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 31);
+            this.btnSave.TabIndex = 15;
+            this.btnSave.Text = "Guardar";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 660);
+            this.ClientSize = new System.Drawing.Size(746, 694);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.gbFeet);
             this.Controls.Add(this.gbHand);
             this.Controls.Add(this.gbElbow);
@@ -1385,10 +1373,8 @@
             this.Controls.Add(this.gbBack);
             this.Controls.Add(this.gbNeck);
             this.Controls.Add(this.gbShoulder);
-            this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDashBoard";
@@ -1407,10 +1393,7 @@
             this.gbHand.PerformLayout();
             this.gbFeet.ResumeLayout(false);
             this.gbFeet.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1523,9 +1506,7 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 

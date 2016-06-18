@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using RogersKodak.Properties;
 
 
 namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
@@ -52,10 +53,10 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
             cmd.Parameters["@createdById"].Value = 0;
             cmd.Parameters.Add("@analysisResultsId", SqlDbType.Int);
             cmd.Parameters["@analysisResultsId"].Value = analysisResultsId;
-            cmd.Connection = this.Connection;
-            this.Connection.Open();
+            cmd.Connection = new SqlConnection(Settings.Default.LocalBDConnectionString);
+            cmd.Connection.Open();
             num = cmd.ExecuteNonQuery();
-            this.Connection.Close();
+            cmd.Connection.Close();
             return num;
         }
     }

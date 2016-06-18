@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RogersKodak.Data_Sets;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -11,16 +12,14 @@ namespace RogersKodak
 {
 
 
-    public enum RKEffortDuration
+    public enum RKEffortType
     {
-        [Description("Less than 6 seconds")]
-        LessThan_6_Seconds = 1,
-        [Description("Between 6 and 20 seconds")]
-        Between_6_And_20_Seconds = 2,
-        [Description("Between 20 and 30 seconds")]
-        Between_20_And_30_Seconds = 3,
-        [Description("More than 30 seconds")]
-        MoreThan_30_Seconds = 4
+        [Description("Esfuerzo")]
+        Level = 1,
+        [Description("Duracion")]
+        Duration = 2,
+        [Description("Frecuencia")]
+        Frequency = 3,
     }
 
 
@@ -48,25 +47,15 @@ namespace RogersKodak
         Mortal = 4
     }
 
-
-    public enum RKBodyPart
-    {
-        Neck,
-        Shoulder,
-        Back,
-        Leg,
-        Feet
-    }
-
-
     public class RKUtils
     {
         private static string[] _lowCombinationCases = { "111", "112", "113", "211", "121", "212", "311", "122", "131", "221" };
         private static string[] _mediumCombinationCases = { "123", "132", "213", "222", "231", "232", "312" };
         private static string[] _highCombinationCases = { "223", "313", "321", "322" };
         // If the combination contains at even one four also its very high "4xx","x4x","xx4"                                                 
-        //I added the 333 combination, ask to alberto
-        private static string[] _veyHighCombinationCases = { "323", "331", "332", "333" };
+        //I added some combination, ask to alberto:
+        // 233,333 VH
+        private static string[] _veyHighCombinationCases = { "323", "331", "332", "233", "333" };
 
         private static readonly Dictionary<string, string> _frequencyOptions = new Dictionary<string, string>
         {
@@ -124,6 +113,10 @@ namespace RogersKodak
 
         #region These methods fill feed dialog controls
 
+        /// <summary>
+        /// Fills drop downs 
+        /// </summary>
+        /// <param name="selectDlg"></param>
         public static void LoadEffortOptions(Form selectDlg)
         {
             var gb = (GroupBox)selectDlg.Controls["gb"];
@@ -161,6 +154,11 @@ namespace RogersKodak
             cbFreq2.DataSource = new BindingSource(_frequencyOptions, null);
         }
 
+        /// <summary>
+        /// Set the selected item in the drop downs based upon de colors of the dashboard
+        /// </summary>
+        /// <param name="gbSelect"></param>
+        /// <param name="gbResults"></param>
         public static void SetSelectedEffortOption(GroupBox gbSelect, GroupBox gbResults)
         {
             Label lev1 = (Label)FindControlByKey("level1", gbResults.Controls);
@@ -188,6 +186,11 @@ namespace RogersKodak
 
         }
 
+        /// <summary>
+        /// Receives a capion obj and based upon its color ser the selected value to the drop down
+        /// </summary>
+        /// <param name="cbSelect"></param>
+        /// <param name="lbResult"></param>
         private static void SetSelectedOptionToCombo(ComboBox cbSelect, Label lbResult)
         {
             switch (lbResult.ForeColor.Name)
@@ -209,6 +212,11 @@ namespace RogersKodak
             }
         }
 
+        /// <summary>
+        /// Received a color in strin and returns a color name in string too
+        /// </summary>
+        /// <param name="colorName"></param>
+        /// <returns></returns>
         public static string GetNumberFromColorName(string colorName)
         {
             string res = "0";
@@ -255,7 +263,7 @@ namespace RogersKodak
 
             if (FindControlByKey("level2", gbResults.Controls) == null)
             {
-                SetSingleResultByEffortCombination(set1, string.Empty, res0, res1, null);
+                SetResultByEffortCombination(set1, string.Empty, res0, res1, null);
                 return;
             }
 
@@ -272,7 +280,7 @@ namespace RogersKodak
             SetSelectedEffortColor(lev2, cblev2);
             SetSelectedEffortColor(dur2, cbdur2);
             SetSelectedEffortColor(freq2, cbfreq2);
-            SetSingleResultByEffortCombination(set1, set2, res0, res1, res2);
+            SetResultByEffortCombination(set1, set2, res0, res1, res2);
         }
 
         public static string GetBodyPartCombination(GroupBox gb)
@@ -297,16 +305,16 @@ namespace RogersKodak
             return res;
         }
 
-        static private void SetSingleResultByEffortCombination(string combination1, string combination2, Label res0, Label res1, Label res2)
+        static private void SetResultByEffortCombination(string combination1, string combination2, Label res0, Label res1, Label res2)
         {
             RKSingleResult singleRes1 = RKSingleResult.Aceptable;
-            singleRes1 = GetEffortResult(combination1);
+            singleRes1 = GetEffortResult(combination1.Substring(0,3));
             SetSingleResultStyle(res1, singleRes1);
 
             RKSingleResult singleRes2 = RKSingleResult.Aceptable;
             if (!string.IsNullOrEmpty(combination2))
             {
-                singleRes2 = GetEffortResult(combination2);
+                singleRes2 = GetEffortResult(combination2.Substring(0,3));
                 SetSingleResultStyle(res2, singleRes2);
             }
 
@@ -367,8 +375,6 @@ namespace RogersKodak
 
         }
 
-
-
         /// <summary>
         /// Determines whether a given combintion is Mortal result
         /// </summary>
@@ -405,7 +411,7 @@ namespace RogersKodak
         }
 
         /// <summary>
-        /// Manage the label depending of the effort option selected1
+        /// Sets color to the labels based upon the effort levels selected in the combo
         /// </summary>
         /// <param name="lbl"></param>
         /// <param name="cmb"></param>
@@ -447,6 +453,81 @@ namespace RogersKodak
             else
                 return value.ToString();
         }
+
+        #region Methods that set dashboard based upon data gotten from BD
+        /// <summary>
+        /// Gets the dashboard form and calls the fill method for each body part
+        /// </summary>
+        /// <param name="frmDashboard"></param>
+        static public void SetDashboardFromSavedAnalysis(Form frmDashboard, RKDataSet.AnalysisCompleteDataViewRow efforts)
+        {
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbNeck"], efforts.Neck);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbShoulder"], efforts.Shoulder1 + efforts.Shoulder2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbBack"], efforts.Back );
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbElbow"], efforts.Elbow1 + efforts.Elbow2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbHand"], efforts.Hand1 + efforts.Hand2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbLeg"], efforts.Leg1 + efforts.Leg2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbFeet"], efforts.Feet1 + efforts.Feet2);
+        }
+
+        static private void SetColorFromCombination(GroupBox gb, string combination)
+        {
+            Label lev1 = (Label)FindControlByKey("level1", gb.Controls);
+            Label dur1 = (Label)FindControlByKey("duration1", gb.Controls);
+            Label freq1 = (Label)FindControlByKey("frequency1", gb.Controls);
+            Label res1 = (Label)FindControlByKey("result1", gb.Controls);
+            Label res0 = (Label)FindControlByKey("result0", gb.Controls);
+            SetLabelBySavedData(lev1, combination.Substring(0, 1), RKEffortType.Level);
+            SetLabelBySavedData(dur1, combination.Substring(1, 1), RKEffortType.Duration);
+            SetLabelBySavedData(freq1, combination.Substring(2, 1), RKEffortType.Frequency);
+
+            if (FindControlByKey("level2", gb.Controls) == null)
+            {
+                //calculate the result of a combination for one body part side (the retrieved from DB is not used)
+                SetResultByEffortCombination(combination, string.Empty, res0, res1, null);
+                return;
+            }
+
+            Label lev2 = (Label)FindControlByKey("level2", gb.Controls);
+            Label dur2 = (Label)FindControlByKey("duration2", gb.Controls);
+            Label freq2 = (Label)FindControlByKey("frequency2", gb.Controls);
+            Label res2 = (Label)FindControlByKey("result2", gb.Controls);
+            SetLabelBySavedData(lev2, combination.Substring(4, 1), RKEffortType.Level);
+            SetLabelBySavedData(dur2, combination.Substring(5, 1), RKEffortType.Duration);
+            SetLabelBySavedData(freq2, combination.Substring(6, 1), RKEffortType.Frequency);
+
+            SetResultByEffortCombination(combination.Substring(0, 4), combination.Substring(4), res0, res1, res2);
+        }
+
+        static private void SetLabelBySavedData(Label lbl, string effortLevel, RKEffortType effortType)
+        {
+            if (effortType == RKEffortType.Duration)
+                lbl.Text = _durationOptions[effortLevel];
+            else if (effortType == RKEffortType.Frequency)
+                lbl.Text = _frequencyOptions[effortLevel];
+            else
+                lbl.Text = _levelOptions[effortLevel];
+
+            switch (effortLevel)
+            {
+                case "1":
+                    lbl.ForeColor = Color.LimeGreen;
+                    break;
+                case "2":
+                    lbl.ForeColor = Color.DarkOrange;
+                    break;
+                case "3":
+                    lbl.ForeColor = Color.Red;
+                    break;
+                case "4":
+                    lbl.ForeColor = Color.Black;
+                    break;
+                default:
+                    break;
+            }
+        }
+        #endregion
+
 
     }
 }

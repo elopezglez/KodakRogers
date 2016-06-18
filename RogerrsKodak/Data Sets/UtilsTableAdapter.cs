@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using RogersKodak.Properties;
+using RogersKodak.Data_Sets.RKDataSetTableAdapters;
 
 namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
 {
@@ -20,13 +22,26 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("@startDate", SqlDbType.Date).Value = startDate;
             cmd.Parameters.Add("@endDate", SqlDbType.Date).Value = endTime;
-            var cnn = new AnalysisResultsTableAdapter();
-            cmd.Connection = cnn.Connection;
+            //var cnn = new AnalysisResultsTableAdapter();
+            cmd.Connection = new SqlConnection(Settings.Default.LocalBDConnectionString);//cnn.Connection;
             cmd.Connection.Open();
             var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             tb.Load(reader);
-            //cmd.Connection.Close();
             return tb;
+            //var aa = new LocalBDDataSet.AnalysisDataDataTable();
+            //aa.Load(reader);
+        }
+
+        /// <summary>
+        /// Get the complete information about an analysis 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public RKDataSet.AnalysisCompleteDataViewRow GetAnalysisByID(int id)
+        {
+            var adapter = new AnalysisCompleteDataViewTableAdapter();
+            var res = adapter.GetAnalysisById(id);
+            return res.FirstOrDefault();
         }
     }
 

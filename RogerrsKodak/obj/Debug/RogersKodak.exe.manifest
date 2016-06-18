@@ -42,42 +42,33 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RogersKodak.exe" size="160768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RogersKodak.exe" size="190464">
       <assemblyIdentity name="RogersKodak" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2IfDcAoi4c4sFAgg1LTWOeMFX9UtKYCFybndpPcIhSM=</dsig:DigestValue>
+        <dsig:DigestValue>mv9plDCLyoUcNK8tnp0c3dB5YOSaVoDRhLmLHp2Ou/g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="LocalBD.mdf" size="3211264" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>wZVBykCxHLDsT4HKsN5oeSC0o4EYxH0JavTEaWtopiA=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="LocalBD_log.ldf" size="802816" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>v5Si8oU0HcfcLESEKaeAexieMLceEblO8NEPMYy0/50=</dsig:DigestValue>
+      <dsig:DigestValue>iMiE60efajmoQAM+TA1icquGrMyywDioCZWU25Jnyes=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RogersKodak.exe.config" size="1056">
+  <file name="RogersKodak.exe.config" size="902">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>N883HG6QLKouOSJ2ifrTQ7/qlk8AKCfY32zILVCSWxE=</dsig:DigestValue>
+      <dsig:DigestValue>4R6+klezWFf50FvnTjrHX7B/vpl2J3yVhr7dWNvgcd8=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

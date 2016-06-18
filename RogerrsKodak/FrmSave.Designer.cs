@@ -69,7 +69,7 @@
             this.txtJobTitle.Location = new System.Drawing.Point(203, 62);
             this.txtJobTitle.Name = "txtJobTitle";
             this.txtJobTitle.Size = new System.Drawing.Size(320, 26);
-            this.txtJobTitle.TabIndex = 0;
+            this.txtJobTitle.TabIndex = 1;
             // 
             // label1
             // 
@@ -88,7 +88,7 @@
             this.txtJobDescription.Location = new System.Drawing.Point(203, 92);
             this.txtJobDescription.Name = "txtJobDescription";
             this.txtJobDescription.Size = new System.Drawing.Size(320, 26);
-            this.txtJobDescription.TabIndex = 0;
+            this.txtJobDescription.TabIndex = 2;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@
             this.txtAnalystName.Location = new System.Drawing.Point(203, 122);
             this.txtAnalystName.Name = "txtAnalystName";
             this.txtAnalystName.Size = new System.Drawing.Size(320, 26);
-            this.txtAnalystName.TabIndex = 0;
+            this.txtAnalystName.TabIndex = 3;
             // 
             // label3
             // 
@@ -126,7 +126,7 @@
             this.txtEmployeeName.Location = new System.Drawing.Point(203, 152);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(320, 26);
-            this.txtEmployeeName.TabIndex = 0;
+            this.txtEmployeeName.TabIndex = 4;
             // 
             // label4
             // 
@@ -157,16 +157,18 @@
             this.txtDate.Location = new System.Drawing.Point(203, 179);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(320, 26);
-            this.txtDate.TabIndex = 3;
+            this.txtDate.TabIndex = 0;
+            this.txtDate.TabStop = false;
             // 
             // BtnCancel
             // 
             this.BtnCancel.Location = new System.Drawing.Point(519, 255);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(81, 28);
-            this.BtnCancel.TabIndex = 4;
+            this.BtnCancel.TabIndex = 6;
             this.BtnCancel.Text = "Cancelar";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // btnAccept
             // 

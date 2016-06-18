@@ -26,7 +26,7 @@ Forecolor Black
 Backcolor  red
 forecolor black
 
--Alto Riesgo
+-Alto Riesgo   
 Backcolor  black
 forecolor White
 
@@ -58,4 +58,13 @@ consulta de snalysis done
 *24 quedo el despliege de resultados de la tabla analysis data
 
 *25 de enero centralizar la forma en que se obtiene el cnn string que lo obteg=ngan del app.config es el objetivo
-*funcionalidad de abrir elemento
+*funcionalidad de abrir elemento-
+
+05 DE JUNIO DEL 2016
+LA ESPALDA NO SE ESTA DESPLEGANDO BIEN
+PUEDE DEBERSE A QUE NO SE ESTA GUARDANDO BIEN
+pendente chekar -- [RESUELTO]
+
+FALTA PONERLE ICONOS Y ARREGLAR LAS MEDIDAS DE LAS FORMAS
+AVERIGUAR COMO CERRAR UNA FORMA DASHBOARD DESDE FRM SAVE
+ 

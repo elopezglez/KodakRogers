@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace RogersKodak
 {
@@ -18,9 +19,11 @@ namespace RogersKodak
             this._strResults = strResults;
         }
 
+
+
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            string[] arr =  _strResults.Split('-');
+            string[] arr = _strResults.Split('-');
             var adapterRs = new AnalysisResultsTableAdapter();
             int analysisResultsId = adapterRs.InsertNewAnalysisResultsRecord(
                                     arr[0],
@@ -51,7 +54,18 @@ namespace RogersKodak
                                                   txtEmployeeName.Text,
                                                   analysisResultsId
                                                   );
+
+            MessageBox.Show("EL ANALISIS SE HA GUARDADO CON EXITO", string.Empty, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();            
+        }
+
+
+
 
     }
 }

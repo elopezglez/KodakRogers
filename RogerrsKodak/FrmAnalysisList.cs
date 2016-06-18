@@ -13,12 +13,15 @@ namespace RogersKodak
 {
     public partial class FrmAnalysisList : Form
     {
-        UtilsTableAdapter cn = new UtilsTableAdapter();
+        UtilsTableAdapter utilsAdapter = new UtilsTableAdapter();
+        FrmDashBoard frmDashBoard = new FrmDashBoard();
+
+
         public FrmAnalysisList()
         {
             InitializeComponent();
-            txtEndTime.Value= DateTime.Now.Date.AddDays(1);
-            var tb = cn.GetAnalysisDinceDate(txtStartDate.Value.Date, txtEndTime.Value.Date);
+            txtEndTime.Value = DateTime.Now.Date.AddDays(1);
+            var tb = utilsAdapter.GetAnalysisDinceDate(txtStartDate.Value.Date, txtEndTime.Value.Date);
             PrepareGrid();
             ShowResults();
         }
@@ -26,7 +29,8 @@ namespace RogersKodak
 
 
 
-        private void FillGrid(DataTable ds) {
+        private void FillGrid(DataTable ds)
+        {
             lstAnalysis.Items.Clear();
             foreach (DataRow row in ds.Rows)
             {
@@ -59,9 +63,25 @@ namespace RogersKodak
             ShowResults();
         }
 
-        private void ShowResults() {
-            var tb = cn.GetAnalysisDinceDate(txtStartDate.Value.Date, txtEndTime.Value.Date);
-            FillGrid(tb);        
+        private void ShowResults()
+        {
+            var tb = utilsAdapter.GetAnalysisDinceDate(txtStartDate.Value.Date, txtEndTime.Value.Date);
+            FillGrid(tb);
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            new FrmDashBoard().ShowDialog();
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            if (lstAnalysis.SelectedItems.Count == 0)
+                return;
+            string selectedId = lstAnalysis.SelectedItems[0].Text;
+            var res = utilsAdapter.GetAnalysisByID(int.Parse(selectedId));
+            RKUtils.SetDashboardFromSavedAnalysis(frmDashBoard, res);
+            frmDashBoard.ShowDialog();
         }
 
     }
