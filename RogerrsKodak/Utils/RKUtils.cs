@@ -8,7 +8,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace RogersKodak
+
+namespace RogersKodak.Utils
 {
 
 
@@ -308,13 +309,13 @@ namespace RogersKodak
         static private void SetResultByEffortCombination(string combination1, string combination2, Label res0, Label res1, Label res2)
         {
             RKSingleResult singleRes1 = RKSingleResult.Aceptable;
-            singleRes1 = GetEffortResult(combination1.Substring(0,3));
+            singleRes1 = GetEffortResult(combination1.Substring(0, 3));
             SetSingleResultStyle(res1, singleRes1);
 
             RKSingleResult singleRes2 = RKSingleResult.Aceptable;
             if (!string.IsNullOrEmpty(combination2))
             {
-                singleRes2 = GetEffortResult(combination2.Substring(0,3));
+                singleRes2 = GetEffortResult(combination2.Substring(0, 3));
                 SetSingleResultStyle(res2, singleRes2);
             }
 
@@ -459,15 +460,22 @@ namespace RogersKodak
         /// Gets the dashboard form and calls the fill method for each body part
         /// </summary>
         /// <param name="frmDashboard"></param>
-        static public void SetDashboardFromSavedAnalysis(Form frmDashboard, RKDataSet.AnalysisCompleteDataViewRow efforts)
+        static public void SetDashboardFromSavedAnalysis(Form frmDashboard, RKDataSet.AnalysisCompleteDataViewRow analysis)
         {
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbNeck"], efforts.Neck);
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbShoulder"], efforts.Shoulder1 + efforts.Shoulder2);
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbBack"], efforts.Back );
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbElbow"], efforts.Elbow1 + efforts.Elbow2);
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbHand"], efforts.Hand1 + efforts.Hand2);
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbLeg"], efforts.Leg1 + efforts.Leg2);
-            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbFeet"], efforts.Feet1 + efforts.Feet2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbNeck"], analysis.Neck);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbShoulder"], analysis.Shoulder1 + analysis.Shoulder2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbBack"], analysis.Back);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbElbow"], analysis.Elbow1 + analysis.Elbow2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbHand"], analysis.Hand1 + analysis.Hand2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbLeg"], analysis.Leg1 + analysis.Leg2);
+            SetColorFromCombination((GroupBox)frmDashboard.Controls["gbFeet"], analysis.Feet1 + analysis.Feet2);
+            var frm = (RogersKodak.Forms.frmAnalysisReport)frmDashboard;
+            frm.txtCompany.Text = analysis.Company;
+            frm.txtJobTitle.Text = analysis.JobTitle;
+            frm.txtJobDescription.Text = analysis.JobDescription;
+            frm.txtEmployeeName.Text = analysis.EmployeeName;
+            frm.txtAnalystName.Text = analysis.AnalystName;
+            frm.txtDate.Value = analysis.DateCreated;
         }
 
         static private void SetColorFromCombination(GroupBox gb, string combination)

@@ -67,4 +67,18 @@ pendente chekar -- [RESUELTO]
 
 FALTA PONERLE ICONOS Y ARREGLAR LAS MEDIDAS DE LAS FORMAS
 AVERIGUAR COMO CERRAR UNA FORMA DASHBOARD DESDE FRM SAVE
- 
+
+
+ 18 06 16
+ Al guardar ya se cierra el frmSave y el Dashboard
+ Hay que centra todas las formas
+
+ Miercoles 29 de Agosto 2016
+ Ya esta el look and feel
+ Validar que no se cierre el dasboard sin antes confirmar
+ Trabajar en el instalador
+
+ Serial key Installshield
+ D58F0QW-D20-709272D7EN
+
+

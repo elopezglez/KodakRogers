@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="RogersKodak.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="RogersKodak.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="industrial.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="RogersKodak" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,42 +43,42 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RogersKodak.exe" size="118784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RogersKodak.exe" size="280064">
       <assemblyIdentity name="RogersKodak" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E27sdy5JnEbK70v7CdDL7P0AfxxvXXTU8FKxgHz3GQk=</dsig:DigestValue>
+        <dsig:DigestValue>U8IU01XdkuFBEUFKN5I93lHcrgb57ZoU7sMCpxQLInw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="LocalBD.mdf" size="3211264" writeableType="applicationData">
+  <file name="industrial.ico" size="67646">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MCSdqe12zsVhxaX1OMnaw1xxnvn6xhwgEGzEeSxmR44=</dsig:DigestValue>
+      <dsig:DigestValue>V2L81BpAqUiFYVk0o+WpR7GslrXMYRAKGQPwezuWC6A=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LocalBD_log.ldf" size="802816" writeableType="applicationData">
+  <file name="LocalBD1_log.ldf" size="802816" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>H0lsKQInrHpHw1nT9VY7uYe7r+t4ocMWZxoXPJXoUzk=</dsig:DigestValue>
+      <dsig:DigestValue>rCd7g0OvhLXJz2e7VcSb18P7AIMgv+T2xRfjqp+VRCY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RogersKodak.exe.config" size="564">
+  <file name="RogersKodak.exe.config" size="565">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7o+BjPqYKEm8uzxpaVghPjkR3qQjnoU2OjCM614Ic90=</dsig:DigestValue>
+      <dsig:DigestValue>T/3tGNNRUvqpUQW5kQicXCbnssD/wPb0DWx8Z6sEGOQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

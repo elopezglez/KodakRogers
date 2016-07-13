@@ -136,6 +136,7 @@
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.gbShoulder.SuspendLayout();
             this.gbNeck.SuspendLayout();
             this.gbBack.SuspendLayout();
@@ -240,6 +241,7 @@
             // 
             this.shoulderresult2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.shoulderresult2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.shoulderresult2.ForeColor = System.Drawing.Color.LimeGreen;
             this.shoulderresult2.Location = new System.Drawing.Point(462, 63);
             this.shoulderresult2.Name = "shoulderresult2";
             this.shoulderresult2.Size = new System.Drawing.Size(127, 22);
@@ -250,6 +252,7 @@
             // 
             this.lblShoulderFrequency2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShoulderFrequency2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblShoulderFrequency2.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblShoulderFrequency2.Location = new System.Drawing.Point(331, 63);
             this.lblShoulderFrequency2.Name = "lblShoulderFrequency2";
             this.lblShoulderFrequency2.Size = new System.Drawing.Size(127, 22);
@@ -260,6 +263,7 @@
             // 
             this.shoulderresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.shoulderresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.shoulderresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.shoulderresult1.Location = new System.Drawing.Point(462, 41);
             this.shoulderresult1.Name = "shoulderresult1";
             this.shoulderresult1.Size = new System.Drawing.Size(127, 22);
@@ -270,6 +274,7 @@
             // 
             this.lblShoulderFrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShoulderFrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblShoulderFrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblShoulderFrequency1.Location = new System.Drawing.Point(331, 41);
             this.lblShoulderFrequency1.Name = "lblShoulderFrequency1";
             this.lblShoulderFrequency1.Size = new System.Drawing.Size(127, 22);
@@ -280,6 +285,7 @@
             // 
             this.lblShoulderDuration2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShoulderDuration2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblShoulderDuration2.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblShoulderDuration2.Location = new System.Drawing.Point(202, 64);
             this.lblShoulderDuration2.Name = "lblShoulderDuration2";
             this.lblShoulderDuration2.Size = new System.Drawing.Size(127, 22);
@@ -290,6 +296,7 @@
             // 
             this.lblShoulderDuration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShoulderDuration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblShoulderDuration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblShoulderDuration1.Location = new System.Drawing.Point(202, 42);
             this.lblShoulderDuration1.Name = "lblShoulderDuration1";
             this.lblShoulderDuration1.Size = new System.Drawing.Size(127, 22);
@@ -300,6 +307,7 @@
             // 
             this.lblShoulderLevel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShoulderLevel2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblShoulderLevel2.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblShoulderLevel2.Location = new System.Drawing.Point(71, 64);
             this.lblShoulderLevel2.Name = "lblShoulderLevel2";
             this.lblShoulderLevel2.Size = new System.Drawing.Size(127, 22);
@@ -310,6 +318,7 @@
             // 
             this.lblShoulderLevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShoulderLevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblShoulderLevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblShoulderLevel1.Location = new System.Drawing.Point(71, 42);
             this.lblShoulderLevel1.Name = "lblShoulderLevel1";
             this.lblShoulderLevel1.Size = new System.Drawing.Size(127, 22);
@@ -349,6 +358,7 @@
             this.gbNeck.Controls.Add(this.necklevel1);
             this.gbNeck.Controls.Add(this.label18);
             this.gbNeck.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbNeck.ForeColor = System.Drawing.Color.Black;
             this.gbNeck.Location = new System.Drawing.Point(6, 2);
             this.gbNeck.Name = "gbNeck";
             this.gbNeck.Size = new System.Drawing.Size(734, 79);
@@ -384,6 +394,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(358, 17);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 20);
@@ -394,6 +405,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(491, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
@@ -404,6 +416,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(236, 17);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 20);
@@ -414,7 +427,7 @@
             // 
             this.neckresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neckresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neckresult1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neckresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.neckresult1.Location = new System.Drawing.Point(462, 42);
             this.neckresult1.Name = "neckresult1";
             this.neckresult1.Size = new System.Drawing.Size(127, 22);
@@ -425,7 +438,7 @@
             // 
             this.neckfrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neckfrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neckfrequency1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neckfrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.neckfrequency1.Location = new System.Drawing.Point(331, 42);
             this.neckfrequency1.Name = "neckfrequency1";
             this.neckfrequency1.Size = new System.Drawing.Size(127, 22);
@@ -436,7 +449,7 @@
             // 
             this.neckduration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neckduration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neckduration1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neckduration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.neckduration1.Location = new System.Drawing.Point(202, 42);
             this.neckduration1.Name = "neckduration1";
             this.neckduration1.Size = new System.Drawing.Size(127, 22);
@@ -447,7 +460,7 @@
             // 
             this.necklevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.necklevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.necklevel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.necklevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.necklevel1.Location = new System.Drawing.Point(71, 42);
             this.necklevel1.Name = "necklevel1";
             this.necklevel1.Size = new System.Drawing.Size(127, 22);
@@ -554,6 +567,7 @@
             // 
             this.backresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.backresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.backresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.backresult1.Location = new System.Drawing.Point(462, 42);
             this.backresult1.Name = "backresult1";
             this.backresult1.Size = new System.Drawing.Size(127, 22);
@@ -564,6 +578,7 @@
             // 
             this.backfrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.backfrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.backfrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.backfrequency1.Location = new System.Drawing.Point(331, 42);
             this.backfrequency1.Name = "backfrequency1";
             this.backfrequency1.Size = new System.Drawing.Size(127, 22);
@@ -574,6 +589,7 @@
             // 
             this.backduration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.backduration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.backduration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.backduration1.Location = new System.Drawing.Point(202, 42);
             this.backduration1.Name = "backduration1";
             this.backduration1.Size = new System.Drawing.Size(127, 22);
@@ -584,6 +600,7 @@
             // 
             this.lblBackLevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBackLevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.lblBackLevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblBackLevel1.Location = new System.Drawing.Point(71, 42);
             this.lblBackLevel1.Name = "lblBackLevel1";
             this.lblBackLevel1.Size = new System.Drawing.Size(127, 22);
@@ -683,6 +700,7 @@
             // 
             this.legresult2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.legresult2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.legresult2.ForeColor = System.Drawing.Color.LimeGreen;
             this.legresult2.Location = new System.Drawing.Point(462, 64);
             this.legresult2.Name = "legresult2";
             this.legresult2.Size = new System.Drawing.Size(127, 22);
@@ -693,6 +711,7 @@
             // 
             this.legfrequency2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.legfrequency2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.legfrequency2.ForeColor = System.Drawing.Color.LimeGreen;
             this.legfrequency2.Location = new System.Drawing.Point(331, 62);
             this.legfrequency2.Name = "legfrequency2";
             this.legfrequency2.Size = new System.Drawing.Size(127, 22);
@@ -703,6 +722,7 @@
             // 
             this.legresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.legresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.legresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.legresult1.Location = new System.Drawing.Point(462, 42);
             this.legresult1.Name = "legresult1";
             this.legresult1.Size = new System.Drawing.Size(127, 22);
@@ -713,6 +733,7 @@
             // 
             this.legfrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.legfrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.legfrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.legfrequency1.Location = new System.Drawing.Point(331, 42);
             this.legfrequency1.Name = "legfrequency1";
             this.legfrequency1.Size = new System.Drawing.Size(127, 22);
@@ -723,6 +744,7 @@
             // 
             this.legduration2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.legduration2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.legduration2.ForeColor = System.Drawing.Color.LimeGreen;
             this.legduration2.Location = new System.Drawing.Point(202, 64);
             this.legduration2.Name = "legduration2";
             this.legduration2.Size = new System.Drawing.Size(127, 22);
@@ -733,6 +755,7 @@
             // 
             this.legduration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.legduration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.legduration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.legduration1.Location = new System.Drawing.Point(202, 42);
             this.legduration1.Name = "legduration1";
             this.legduration1.Size = new System.Drawing.Size(127, 22);
@@ -743,6 +766,7 @@
             // 
             this.leglevel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.leglevel2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.leglevel2.ForeColor = System.Drawing.Color.LimeGreen;
             this.leglevel2.Location = new System.Drawing.Point(71, 64);
             this.leglevel2.Name = "leglevel2";
             this.leglevel2.Size = new System.Drawing.Size(127, 22);
@@ -753,6 +777,7 @@
             // 
             this.leglevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.leglevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.leglevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.leglevel1.Location = new System.Drawing.Point(71, 42);
             this.leglevel1.Name = "leglevel1";
             this.leglevel1.Size = new System.Drawing.Size(127, 22);
@@ -875,6 +900,7 @@
             // 
             this.elbowresult2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowresult2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowresult2.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowresult2.Location = new System.Drawing.Point(462, 62);
             this.elbowresult2.Name = "elbowresult2";
             this.elbowresult2.Size = new System.Drawing.Size(127, 22);
@@ -885,6 +911,7 @@
             // 
             this.elbowresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowresult1.Location = new System.Drawing.Point(462, 42);
             this.elbowresult1.Name = "elbowresult1";
             this.elbowresult1.Size = new System.Drawing.Size(127, 22);
@@ -895,6 +922,7 @@
             // 
             this.elbowfrequency2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowfrequency2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowfrequency2.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowfrequency2.Location = new System.Drawing.Point(331, 64);
             this.elbowfrequency2.Name = "elbowfrequency2";
             this.elbowfrequency2.Size = new System.Drawing.Size(127, 22);
@@ -905,6 +933,7 @@
             // 
             this.elbowfrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowfrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowfrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowfrequency1.Location = new System.Drawing.Point(331, 42);
             this.elbowfrequency1.Name = "elbowfrequency1";
             this.elbowfrequency1.Size = new System.Drawing.Size(127, 22);
@@ -915,6 +944,7 @@
             // 
             this.elbowduration2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowduration2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowduration2.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowduration2.Location = new System.Drawing.Point(202, 64);
             this.elbowduration2.Name = "elbowduration2";
             this.elbowduration2.Size = new System.Drawing.Size(127, 22);
@@ -925,6 +955,7 @@
             // 
             this.elbowduration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowduration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowduration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowduration1.Location = new System.Drawing.Point(202, 42);
             this.elbowduration1.Name = "elbowduration1";
             this.elbowduration1.Size = new System.Drawing.Size(127, 22);
@@ -935,6 +966,7 @@
             // 
             this.elbowlevel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowlevel2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowlevel2.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowlevel2.Location = new System.Drawing.Point(71, 64);
             this.elbowlevel2.Name = "elbowlevel2";
             this.elbowlevel2.Size = new System.Drawing.Size(127, 22);
@@ -945,6 +977,7 @@
             // 
             this.elbowlevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.elbowlevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.elbowlevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.elbowlevel1.Location = new System.Drawing.Point(71, 42);
             this.elbowlevel1.Name = "elbowlevel1";
             this.elbowlevel1.Size = new System.Drawing.Size(127, 22);
@@ -1064,6 +1097,7 @@
             // 
             this.handresult2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handresult2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handresult2.ForeColor = System.Drawing.Color.LimeGreen;
             this.handresult2.Location = new System.Drawing.Point(462, 62);
             this.handresult2.Name = "handresult2";
             this.handresult2.Size = new System.Drawing.Size(127, 22);
@@ -1074,6 +1108,7 @@
             // 
             this.handresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.handresult1.Location = new System.Drawing.Point(462, 42);
             this.handresult1.Name = "handresult1";
             this.handresult1.Size = new System.Drawing.Size(127, 22);
@@ -1084,6 +1119,7 @@
             // 
             this.handfrequency2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handfrequency2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handfrequency2.ForeColor = System.Drawing.Color.LimeGreen;
             this.handfrequency2.Location = new System.Drawing.Point(331, 62);
             this.handfrequency2.Name = "handfrequency2";
             this.handfrequency2.Size = new System.Drawing.Size(127, 22);
@@ -1094,6 +1130,7 @@
             // 
             this.handfrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handfrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handfrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.handfrequency1.Location = new System.Drawing.Point(331, 42);
             this.handfrequency1.Name = "handfrequency1";
             this.handfrequency1.Size = new System.Drawing.Size(127, 22);
@@ -1104,6 +1141,7 @@
             // 
             this.handduration2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handduration2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handduration2.ForeColor = System.Drawing.Color.LimeGreen;
             this.handduration2.Location = new System.Drawing.Point(202, 62);
             this.handduration2.Name = "handduration2";
             this.handduration2.Size = new System.Drawing.Size(127, 22);
@@ -1114,6 +1152,7 @@
             // 
             this.handduration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handduration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handduration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.handduration1.Location = new System.Drawing.Point(202, 42);
             this.handduration1.Name = "handduration1";
             this.handduration1.Size = new System.Drawing.Size(127, 22);
@@ -1124,6 +1163,7 @@
             // 
             this.handlevel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handlevel2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handlevel2.ForeColor = System.Drawing.Color.LimeGreen;
             this.handlevel2.Location = new System.Drawing.Point(71, 64);
             this.handlevel2.Name = "handlevel2";
             this.handlevel2.Size = new System.Drawing.Size(127, 22);
@@ -1134,6 +1174,7 @@
             // 
             this.handlevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.handlevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.handlevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.handlevel1.Location = new System.Drawing.Point(71, 42);
             this.handlevel1.Name = "handlevel1";
             this.handlevel1.Size = new System.Drawing.Size(127, 22);
@@ -1253,6 +1294,7 @@
             // 
             this.feetresult2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetresult2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetresult2.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetresult2.Location = new System.Drawing.Point(462, 64);
             this.feetresult2.Name = "feetresult2";
             this.feetresult2.Size = new System.Drawing.Size(127, 22);
@@ -1263,6 +1305,7 @@
             // 
             this.feetfrequency2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetfrequency2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetfrequency2.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetfrequency2.Location = new System.Drawing.Point(331, 64);
             this.feetfrequency2.Name = "feetfrequency2";
             this.feetfrequency2.Size = new System.Drawing.Size(127, 22);
@@ -1273,6 +1316,7 @@
             // 
             this.feetresult1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetresult1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetresult1.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetresult1.Location = new System.Drawing.Point(462, 42);
             this.feetresult1.Name = "feetresult1";
             this.feetresult1.Size = new System.Drawing.Size(127, 22);
@@ -1283,6 +1327,7 @@
             // 
             this.feetfrequency1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetfrequency1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetfrequency1.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetfrequency1.Location = new System.Drawing.Point(331, 42);
             this.feetfrequency1.Name = "feetfrequency1";
             this.feetfrequency1.Size = new System.Drawing.Size(127, 22);
@@ -1293,6 +1338,7 @@
             // 
             this.feetduration2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetduration2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetduration2.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetduration2.Location = new System.Drawing.Point(202, 64);
             this.feetduration2.Name = "feetduration2";
             this.feetduration2.Size = new System.Drawing.Size(127, 22);
@@ -1303,6 +1349,7 @@
             // 
             this.feetduration1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetduration1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetduration1.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetduration1.Location = new System.Drawing.Point(202, 42);
             this.feetduration1.Name = "feetduration1";
             this.feetduration1.Size = new System.Drawing.Size(127, 22);
@@ -1313,6 +1360,7 @@
             // 
             this.feetlevel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetlevel2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetlevel2.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetlevel2.Location = new System.Drawing.Point(71, 64);
             this.feetlevel2.Name = "feetlevel2";
             this.feetlevel2.Size = new System.Drawing.Size(127, 22);
@@ -1323,6 +1371,7 @@
             // 
             this.feetlevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feetlevel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.feetlevel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.feetlevel1.Location = new System.Drawing.Point(71, 42);
             this.feetlevel1.Name = "feetlevel1";
             this.feetlevel1.Size = new System.Drawing.Size(127, 22);
@@ -1351,6 +1400,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSave.Location = new System.Drawing.Point(636, 661);
             this.btnSave.Name = "btnSave";
@@ -1360,11 +1410,24 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCancel.Location = new System.Drawing.Point(526, 661);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(104, 31);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // FrmDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 694);
+            this.ClientSize = new System.Drawing.Size(747, 694);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.gbFeet);
             this.Controls.Add(this.gbHand);
@@ -1373,7 +1436,7 @@
             this.Controls.Add(this.gbBack);
             this.Controls.Add(this.gbNeck);
             this.Controls.Add(this.gbShoulder);
-            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -1507,6 +1570,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
 

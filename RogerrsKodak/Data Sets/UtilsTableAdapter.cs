@@ -12,24 +12,33 @@ namespace RogersKodak.Data_Sets.LocalBDDataSetTableAdapters
 {
     public class UtilsTableAdapter
     {
-        public DataTable GetAnalysisDinceDate(DateTime startDate, DateTime endTime)
+        public DataTable GetAnalysisSinceDate(DateTime startDate, DateTime endTime)
         {
-            DataTable tb = new DataTable();
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = @"select * from AnalysisData
+
+            try
+            {
+                DataTable tb = new DataTable();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = @"select * from AnalysisData
                               where datecreated >= @startDate
                               and datecreated < @endDate";
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@startDate", SqlDbType.Date).Value = startDate;
-            cmd.Parameters.Add("@endDate", SqlDbType.Date).Value = endTime;
-            //var cnn = new AnalysisResultsTableAdapter();
-            cmd.Connection = new SqlConnection(Settings.Default.LocalBDConnectionString);//cnn.Connection;
-            cmd.Connection.Open();
-            var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            tb.Load(reader);
-            return tb;
-            //var aa = new LocalBDDataSet.AnalysisDataDataTable();
-            //aa.Load(reader);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add("@startDate", SqlDbType.Date).Value = startDate;
+                cmd.Parameters.Add("@endDate", SqlDbType.Date).Value = endTime;
+                //var cnn = new AnalysisResultsTableAdapter();
+                cmd.Connection = new SqlConnection(Settings.Default.LocalBDConnectionString);//cnn.Connection;
+                cmd.Connection.Open();
+                var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                tb.Load(reader);
+                return tb;
+
+            }
+            catch (Exception e)
+            {               
+                System.Windows.Forms.MessageBox.Show(e.Message);
+                return null;
+            }
+
         }
 
         /// <summary>

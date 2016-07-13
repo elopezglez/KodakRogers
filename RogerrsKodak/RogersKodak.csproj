@@ -23,8 +23,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -63,6 +64,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>industrial.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -100,52 +104,71 @@
     <Compile Include="Dialogs\DlgPart1.Designer.cs">
       <DependentUpon>DlgPart1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAnalysisList.cs">
+    <Compile Include="Forms\FrmAnalysisList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAnalysisList.Designer.cs">
+    <Compile Include="Forms\FrmAnalysisList.Designer.cs">
       <DependentUpon>FrmAnalysisList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDashBoard.cs">
+    <Compile Include="Forms\frmAnalysisReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDashBoard.Designer.cs">
+    <Compile Include="Forms\frmAnalysisReport.Designer.cs">
+      <DependentUpon>frmAnalysisReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDashBoard.Designer.cs">
       <DependentUpon>FrmDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSave.cs">
+    <Compile Include="Forms\FrmSave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSave.Designer.cs">
+    <Compile Include="Forms\FrmSave.Designer.cs">
       <DependentUpon>FrmSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\RKUtils.cs" />
+    <Compile Include="Utils\UIUtils.cs.cs" />
     <EmbeddedResource Include="Dialogs\DlgPart2.resx">
       <DependentUpon>DlgPart2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\DlgPart1.resx">
       <DependentUpon>DlgPart1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAnalysisList.resx">
+    <EmbeddedResource Include="Forms\FrmAnalysisList.resx">
       <DependentUpon>FrmAnalysisList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDashBoard.resx">
+    <EmbeddedResource Include="Forms\frmAnalysisReport.resx">
+      <DependentUpon>frmAnalysisReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDashBoard.resx">
       <DependentUpon>FrmDashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSave.resx">
+    <EmbeddedResource Include="Forms\FrmSave.resx">
       <DependentUpon>FrmSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Data Sets\RKDataSet.xsc">
       <DependentUpon>RKDataSet.xsd</DependentUpon>
     </None>
@@ -189,11 +212,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="LocalBD.mdf" />
-    <Content Include="LocalBD_log.ldf">
-      <DependentUpon>LocalBD.mdf</DependentUpon>
+    <None Include="Resources\add.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\danger.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\close.png" />
+    <None Include="LocalBD1.mdf" />
+    <Content Include="industrial.ico" />
+    <Content Include="LocalBD1_log.ldf">
+      <DependentUpon>LocalBD1.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

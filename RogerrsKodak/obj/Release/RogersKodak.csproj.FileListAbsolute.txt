@@ -15,3 +15,21 @@ C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\o
 C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.application
 C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.exe
 C:\Users\reile\Documents\Visual Studio 2013\Projects\RogerrsKodak\RogerrsKodak\obj\Release\RogersKodak.pdb
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Release\RogersKodak.exe.config
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Release\RogersKodak.exe.manifest
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Release\RogersKodak.application
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Release\RogersKodak.exe
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\bin\Release\RogersKodak.pdb
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.Dialogs.DlgPart2.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.Dialogs.DlgPart1.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.FrmAnalysisList.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.Forms.frmAnalysisReport.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.FrmDashBoard.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.FrmSave.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.Forms.FrmSplash.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.Properties.Resources.resources
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.csproj.GenerateResource.Cache
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.exe.manifest
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.application
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.exe
+D:\ROGERS KODAK\CODE\KodakRogers\RogerrsKodak\obj\Release\RogersKodak.pdb

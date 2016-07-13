@@ -7,6 +7,8 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Linq;
+using RogersKodak.Properties;
+using RogersKodak.Utils;
 
 namespace RogersKodak
 {
@@ -14,12 +16,24 @@ namespace RogersKodak
     {
         string _strResults = string.Empty;
         Form _frmDashBoard;
+        Form _frmHome;
 
-        public FrmSave(string strResults, Form frmDashBoard)
+        public FrmSave(string strResults, Form frmHome, Form frmDashBoard)
         {
             InitializeComponent();
+            CustomInitialize();
+            
             this._strResults = strResults;
             _frmDashBoard = frmDashBoard;
+            _frmHome = frmHome;
+        }
+
+        void CustomInitialize() {
+            UIUtils.SetIconToButton(btnAccept, Resources.ok);
+            UIUtils.SetIconToButton(BtnCancel, Resources.close);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+
         }
 
 
@@ -61,12 +75,15 @@ namespace RogersKodak
             MessageBox.Show("EL ANALISIS SE HA GUARDADO CON EXITO", string.Empty, MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
             _frmDashBoard.Close();
+            ((FrmAnalysisList)_frmHome).ShowResults();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();            
+        {           
+            this.Close();
         }
+
+ 
 
 
 

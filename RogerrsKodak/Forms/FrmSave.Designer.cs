@@ -1,4 +1,6 @@
-﻿namespace RogersKodak
+﻿using RogersKodak.Properties;
+using System.Windows.Forms;
+namespace RogersKodak
 {
     partial class FrmSave
     {
@@ -162,19 +164,22 @@
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(519, 255);
+            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.Location = new System.Drawing.Point(351, 216);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(81, 28);
+            this.BtnCancel.Size = new System.Drawing.Size(83, 31);
             this.BtnCancel.TabIndex = 6;
             this.BtnCancel.Text = "Cancelar";
+            this.BtnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(432, 255);
+            this.btnAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccept.Location = new System.Drawing.Point(440, 216);
             this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(81, 28);
+            this.btnAccept.Size = new System.Drawing.Size(83, 31);
             this.btnAccept.TabIndex = 5;
             this.btnAccept.Text = "Aceptar";
             this.btnAccept.UseVisualStyleBackColor = true;
@@ -184,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 318);
+            this.ClientSize = new System.Drawing.Size(534, 259);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.txtDate);
